@@ -1,0 +1,7 @@
+<h1>{{ mainHeading }}</h1>
+<playlist [videos]="videos"></playlist>
+<h3>{{ addVideoHeading }}</h3>
+<input type="text" placeholder="Title" #newTitle /> <br/>
+<input type="text" placeholder="Video Code" #newVideoCode /> <br/>
+<input type="textarea" placeholder="Description" #newDesc /> <br/><br/>
+<button class="btn btn-info" (click)="addVideo(newTitle.value, newVideoCode.value, newDesc.value)">Add to Playlist</button>
